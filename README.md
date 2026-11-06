@@ -69,3 +69,31 @@ Prueba de Escritorio (Incluyendo Casos Borde)Caso / PruebaEntrada horasEntrada t
 Ejercicio #2
 
 Tabla de VerdadcorreoLleno (P)passwordLleno (Q)¬P¬QError (¬P∨¬Q)Estado del BotónFalsoFalsoVVVerdaderoDeshabilitadoFalsoVerdaderoVFVerdaderoDeshabilitadoVerdaderoFalsoFVVerdaderoDeshabilitadoVerdaderoVerdaderoFFFalsoHabilitado
+
+
+
+
+Semana #3
+
+Ejercicio #1
+
+Entradas simuladas: 50000, 20000, -5000 (inválido), 30000, 0 (salida).IteraciónEntrada monto¿monto <> 0?¿monto < 0?acumulador (Anterior ➔ Nuevo)contador (Anterior ➔ Nuevo)Salida en PantallaInicio---00Pide primer monto150000SíNo0 ➔ 500000 ➔ 1Pide siguiente monto220000SíNo50000 ➔ 700001 ➔ 2Pide siguiente monto3-5000SíSí70000 (sin cambios)2 (sin cambios)"Aviso: No se permiten montos..."430000SíNo70000 ➔ 1000002 ➔ 3Pide siguiente monto50No-100000 (Final)3 (Final)Muestra totales y finaliza
+
+Ejercicio #2
+
+Tabla de Traza / Prueba de EscritorioEntrada: n = 4, Notas ingresadas: 80, 45, 95, 60.Iteración (i)Nota Ingresadasuma acumuladanotaMaxnotaMinaprobados1 (Inicial)808080801 ($\ge 60$)24512580451 ($< 60$)39522095452 ($\ge 60$)46028095453 ($\ge 60$)FinCálculoPromedio = $280/4 = 70$Max: 95Min: 45Total Aprobados: 3
+
+
+Ejercicio #3
+
+Tabla de Traza (Para filas = 3)Ciclo Externo (i)Ciclo Interno (j)Acción de ConcatenaciónResultado impreso en la filai = 1j = 1linea = "* "* i = 2j = 1, j = 2linea = "* * "* * i = 3j = 1, j = 2, j = 3linea = "* * * "* * * 
+
+Ejercicio #4
+
+Plaintext
+
+FacturaRestaurante (Programa Principal)
+├── 1. SubProceso CalcularSubtotal (Calcula la suma de los platos)
+├── 2. SubProceso CalcularImpuesto (Aplica el IVA del 19%)
+├── 3. SubProceso CalcularPropina (Aplica el 10% voluntario)
+└── 4. SubProceso ImprimirFactura (Muestra el resumen final desglosado)
